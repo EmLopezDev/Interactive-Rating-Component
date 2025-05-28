@@ -43,10 +43,6 @@
         display: flex;
         flex-direction: column;
 
-        &--input {
-            display: none;
-        }
-
         &--options {
             display: flex;
             align-items: center;
@@ -55,17 +51,44 @@
             margin-bottom: u.rem(24);
         }
 
-        &--label {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: var(--color-grey-900);
+        &--option {
+            position: relative;
             width: u.rem(42);
             height: u.rem(42);
-            border-radius: 50%;
-            color: var(--color-grey-500);
 
-            @include u.text-preset-5-bold;
+            &-input {
+                appearance: none;
+
+                &:hover + label {
+                    color: var(--color-grey-900);
+                    background-color: var(--color-white);
+                }
+
+                &:focus + label {
+                    color: var(--color-grey-900);
+                    background-color: var(--color-white);
+                }
+
+                &:checked + label {
+                    color: var(--color-grey-900);
+                    background-color: var(--color-orange-500);
+                }
+            }
+
+            &-label {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                inset: 0;
+                background-color: var(--color-grey-900);
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                color: var(--color-grey-500);
+
+                @include u.text-preset-5-bold;
+            }
         }
 
         &--submit {
@@ -76,6 +99,15 @@
             color: var(--color-grey-950);
 
             @include u.text-preset-5-bold;
+
+            &:hover {
+                background-color: var(--color-white);
+            }
+
+            &:focus {
+                outline: none;
+                background-color: var(--color-white);
+            }
         }
     }
 }
