@@ -22,62 +22,62 @@ $letter-spacing-400: 2;
 
 @mixin text-preset-1 {
     font-family: $font-family, sans-serif;
-    font-size: u.rem($font-size-500);
+    font-size: f.rem($font-size-500);
     font-weight: $font-weight-bold;
-    line-height: u.rem($line-height-600);
-    letter-spacing: u.rem($letter-spacing-0);
+    line-height: f.rem($line-height-600);
+    letter-spacing: f.rem($letter-spacing-0);
 }
 
 @mixin text-preset-2 {
     font-family: $font-family, sans-serif;
-    font-size: u.rem($font-size-400);
+    font-size: f.rem($font-size-400);
     font-weight: $font-weight-bold;
-    line-height: u.rem($line-height-500);
-    letter-spacing: u.rem($letter-spacing-0);
+    line-height: f.rem($line-height-500);
+    letter-spacing: f.rem($letter-spacing-0);
 }
 
 @mixin text-preset-3 {
     font-family: $font-family, sans-serif;
-    font-size: u.rem($font-size-300);
+    font-size: f.rem($font-size-300);
     font-weight: $font-weight-bold;
-    line-height: u.rem($line-height-400);
-    letter-spacing: u.rem($letter-spacing-200);
+    line-height: f.rem($line-height-400);
+    letter-spacing: f.rem($letter-spacing-200);
 }
 
 @mixin text-preset-4 {
     font-family: $font-family, sans-serif;
-    font-size: u.rem($font-size-200);
-    line-height: u.rem($line-height-400);
-    letter-spacing: u.rem($letter-spacing-0);
+    font-size: f.rem($font-size-200);
+    line-height: f.rem($line-height-400);
+    letter-spacing: f.rem($letter-spacing-0);
 }
 
 @mixin text-preset-4-bold {
     font-family: $font-family, sans-serif;
-    font-size: u.rem($font-size-200);
+    font-size: f.rem($font-size-200);
     font-weight: $font-weight-bold;
-    line-height: u.rem($line-height-200);
-    letter-spacing: u.rem($letter-spacing-400);
+    line-height: f.rem($line-height-200);
+    letter-spacing: f.rem($letter-spacing-400);
 }
 
 @mixin text-preset-5 {
     font-family: $font-family, sans-serif;
-    font-size: u.rem($font-size-100);
-    line-height: u.rem($line-height-300);
-    letter-spacing: u.rem($letter-spacing-0);
+    font-size: f.rem($font-size-100);
+    line-height: f.rem($line-height-300);
+    letter-spacing: f.rem($letter-spacing-0);
 }
 
 @mixin text-preset-5-semi-bold {
     font-family: $font-family, sans-serif;
-    font-size: u.rem($font-size-100);
+    font-size: f.rem($font-size-100);
     font-weight: $font-weight-semi-bold;
-    line-height: u.rem($line-height-400);
-    letter-spacing: u.rem($letter-spacing-100);
+    line-height: f.rem($line-height-400);
+    letter-spacing: f.rem($letter-spacing-100);
 }
 
 @mixin text-preset-5-bold {
     font-family: $font-family, sans-serif;
-    font-size: u.rem($font-size-100);
+    font-size: f.rem($font-size-100);
     font-weight: $font-weight-bold;
-    line-height: u.rem($line-height-100);
-    letter-spacing: u.rem($letter-spacing-300);
+    line-height: f.rem($line-height-100);
+    letter-spacing: f.rem($letter-spacing-300);
 }
