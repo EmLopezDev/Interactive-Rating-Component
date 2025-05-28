@@ -1,0 +1,83 @@
+@use "functions" as f;
+
+$font-family: "Overpass";
+$font-size-100: 14;
+$font-size-200: 15;
+$font-size-300: 16;
+$font-size-400: 24;
+$font-size-500: 28;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$line-height-100: 18;
+$line-height-200: 19;
+$line-height-300: 22;
+$line-height-400: 24;
+$line-height-500: 30;
+$line-height-600: 35;
+$letter-spacing-0: 0;
+$letter-spacing-100: 0.17;
+$letter-spacing-200: 0.2;
+$letter-spacing-300: 1.87;
+$letter-spacing-400: 2;
+
+@mixin text-preset-1 {
+    font-family: $font-family, sans-serif;
+    font-size: u.rem($font-size-500);
+    font-weight: $font-weight-bold;
+    line-height: u.rem($line-height-600);
+    letter-spacing: u.rem($letter-spacing-0);
+}
+
+@mixin text-preset-2 {
+    font-family: $font-family, sans-serif;
+    font-size: u.rem($font-size-400);
+    font-weight: $font-weight-bold;
+    line-height: u.rem($line-height-500);
+    letter-spacing: u.rem($letter-spacing-0);
+}
+
+@mixin text-preset-3 {
+    font-family: $font-family, sans-serif;
+    font-size: u.rem($font-size-300);
+    font-weight: $font-weight-bold;
+    line-height: u.rem($line-height-400);
+    letter-spacing: u.rem($letter-spacing-200);
+}
+
+@mixin text-preset-4 {
+    font-family: $font-family, sans-serif;
+    font-size: u.rem($font-size-200);
+    line-height: u.rem($line-height-400);
+    letter-spacing: u.rem($letter-spacing-0);
+}
+
+@mixin text-preset-4-bold {
+    font-family: $font-family, sans-serif;
+    font-size: u.rem($font-size-200);
+    font-weight: $font-weight-bold;
+    line-height: u.rem($line-height-200);
+    letter-spacing: u.rem($letter-spacing-400);
+}
+
+@mixin text-preset-5 {
+    font-family: $font-family, sans-serif;
+    font-size: u.rem($font-size-100);
+    line-height: u.rem($line-height-300);
+    letter-spacing: u.rem($letter-spacing-0);
+}
+
+@mixin text-preset-5-semi-bold {
+    font-family: $font-family, sans-serif;
+    font-size: u.rem($font-size-100);
+    font-weight: $font-weight-semi-bold;
+    line-height: u.rem($line-height-400);
+    letter-spacing: u.rem($letter-spacing-100);
+}
+
+@mixin text-preset-5-bold {
+    font-family: $font-family, sans-serif;
+    font-size: u.rem($font-size-100);
+    font-weight: $font-weight-bold;
+    line-height: u.rem($line-height-100);
+    letter-spacing: u.rem($letter-spacing-300);
+}
