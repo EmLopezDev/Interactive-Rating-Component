@@ -33,8 +33,11 @@
         <title>Interactive rating component</title>
     </head>
     <body>
-        <main class="card">
-            <h1 class="card__header">
+        <main
+            id="card"
+            class="card"
+        >
+            <!-- <h1 class="card__header">
                 <span class="card__header--img">
                     <img
                         src="./images/icon-star.svg"
@@ -129,21 +132,26 @@
                 >
                     SUBMIT
                 </button>
-            </form>
+            </form> -->
             <!-- Rating state end -->
 
             <!-- Thank you state start -->
 
-            <!-- <img
-                src="./images/illustration-thank-you.svg"
-                alt=""
-            />
-            <span>You selected $4 out of 5</span>
-            <span>Thank you!</span>
-            <p>
-                We appreciate you taking the time to give a rating. If you ever
-                need more support, don’t hesitate to get in touch!
-            </p> -->
+            <div class="card__thanks">
+                <img
+                    class="card__thanks--img"
+                    src="./images/illustration-thank-you.svg"
+                    alt="thank you receipt"
+                />
+                <span class="card__thanks--rating">
+                    You selected $4 out of 5
+                </span>
+                <span class="card__thanks--text">Thank you!</span>
+                <p class="card__thanks--details">
+                    We appreciate you taking the time to give a rating. If you
+                    ever need more support, don’t hesitate to get in touch!
+                </p>
+            </div>
 
             <!-- Thank you state end -->
         </main>
