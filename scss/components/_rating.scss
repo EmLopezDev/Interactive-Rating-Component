@@ -63,6 +63,7 @@
                 &:hover + label {
                     color: var(--color-grey-900);
                     background-color: var(--color-white);
+                    cursor: pointer;
                 }
 
                 &:focus + label {
