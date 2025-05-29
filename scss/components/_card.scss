@@ -7,6 +7,6 @@
     border-radius: u.rem(16);
 
     @include u.breakpoint(small) {
-        padding: u.rem(32);
+        padding-block: u.rem(32);
     }
 }

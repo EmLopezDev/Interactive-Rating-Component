@@ -8,18 +8,18 @@
 
         &--img {
             width: clamp(9rem, 7.875rem + 3vw, 10.125rem);
-            margin-bottom: u.rem(32);
+            margin-block-end: u.rem(32);
         }
 
         &--rating {
             display: flex;
             align-items: center;
             background-color: var(--color-grey-900);
-            padding: 0 u.rem(16);
+            padding-block: 0 u.rem(16);
             color: var(--color-orange-500);
             height: u.rem(32);
             border-radius: u.rem(22);
-            margin-bottom: u.rem(24);
+            margin-block-end: u.rem(24);
 
             @include u.text-preset-5;
 
@@ -30,7 +30,7 @@
 
         &--text {
             color: var(--color-white);
-            margin-bottom: u.rem(16);
+            margin-block-end: u.rem(16);
 
             @include u.text-preset-2;
 
