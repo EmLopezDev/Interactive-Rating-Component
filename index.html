@@ -30,6 +30,10 @@
             rel="stylesheet"
             href="./dist/styles.css"
         />
+        <script
+            defer
+            src="./js/main.js"
+        ></script>
         <title>Interactive rating component</title>
     </head>
     <body>
@@ -37,7 +41,7 @@
             id="card"
             class="card"
         >
-            <!-- <h1 class="card__header">
+            <h1 class="card__header">
                 <span class="card__header--img">
                     <img
                         src="./images/icon-star.svg"
@@ -61,6 +65,7 @@
                             type="radio"
                             name="rating"
                             class="card__rating--option-input"
+                            value="1"
                         />
                         <label
                             for="rating_1"
@@ -75,6 +80,7 @@
                             type="radio"
                             name="rating"
                             class="card__rating--option-input"
+                            value="2"
                         />
                         <label
                             for="rating_2"
@@ -89,6 +95,7 @@
                             type="radio"
                             name="rating"
                             class="card__rating--option-input"
+                            value="3"
                         />
                         <label
                             for="rating_3"
@@ -103,6 +110,7 @@
                             type="radio"
                             name="rating"
                             class="card__rating--option-input"
+                            value="4"
                         />
                         <label
                             for="rating_4"
@@ -113,13 +121,14 @@
                     </div>
                     <div class="card__rating--option">
                         <input
-                            id="5"
+                            id="rating_5"
                             type="radio"
                             name="rating"
                             class="card__rating--option-input"
+                            value="5"
                         />
                         <label
-                            for="5"
+                            for="rating_5"
                             class="card__rating--option-label"
                         >
                             5
@@ -127,33 +136,14 @@
                     </div>
                 </fieldset>
                 <button
+                    id="submit"
                     type="submit"
                     class="card__rating--submit"
+                    disabled
                 >
                     SUBMIT
                 </button>
-            </form> -->
-            <!-- Rating state end -->
-
-            <!-- Thank you state start -->
-
-            <div class="card__thanks">
-                <img
-                    class="card__thanks--img"
-                    src="./images/illustration-thank-you.svg"
-                    alt="thank you receipt"
-                />
-                <span class="card__thanks--rating">
-                    You selected $4 out of 5
-                </span>
-                <span class="card__thanks--text">Thank you!</span>
-                <p class="card__thanks--details">
-                    We appreciate you taking the time to give a rating. If you
-                    ever need more support, don’t hesitate to get in touch!
-                </p>
-            </div>
-
-            <!-- Thank you state end -->
+            </form>
         </main>
     </body>
 </html>

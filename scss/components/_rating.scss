@@ -105,11 +105,16 @@
                 @include u.text-preset-5-semi-bold;
             }
 
-            &:hover {
+            &:disabled {
+                opacity: 50%;
+                cursor: not-allowed;
+            }
+
+            &:hover:not(:disabled) {
                 background-color: var(--color-white);
             }
 
-            &:focus {
+            &:focus:not(:disabled) {
                 outline: none;
                 background-color: var(--color-white);
             }
